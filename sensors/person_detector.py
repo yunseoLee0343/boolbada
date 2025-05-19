@@ -7,6 +7,7 @@ def detect_person_from_camera(show_preview=False):
     hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
     # Picamera2 초기화
+    import pdb;pdb.set_trace()
     picam2 = Picamera2()
     picam2.configure(picam2.create_still_configuration())
 
